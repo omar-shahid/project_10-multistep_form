@@ -36,4 +36,4 @@ jobs:
       - name: Installing Surge
         run: npm install surge -g
       - name: Deploying to surge
-        run: surge ./build reactmultistepformwithformik.surge.sh --token ${{ env.SURGE_TOKEN }}
+        run: surge ./build reactmultistepformwithformik.surge.sh --token ${{ secrets.SURGE_TOKEN }}
