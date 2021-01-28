@@ -30,7 +30,6 @@ export const PersonalInfo: React.FC<Props> = (props) => {
     touched,
     isSubmitting,
     handleChange,
-    values,
   } = props.helpers;
   return (
     <>
