@@ -27,13 +27,13 @@ jobs:
       - name: Use Node.js 15
         uses: actions/setup-node@v1
         with:
-          node-version: 15.x
+          node-version: 14.x
       - name: installing yarn
         run: |
           npm install yarn
       - name: "Installing Dependencies using Yarn"
         run: yarn install
       - name: Installing Surge
-        run: npm install surge
+        run: npm install surge -g
       - name: Deploying to surge
         run: surge ./build reactmultistepformwithformik.surge.sh --token ${{ env.SURGE_TOKEN }}
