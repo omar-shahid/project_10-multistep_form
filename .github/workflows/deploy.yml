@@ -33,6 +33,8 @@ jobs:
           npm install yarn
       - name: "Installing Dependencies using Yarn"
         run: yarn install
+      - name: "Building project"
+        run: yarn build
       - name: Installing Surge
         run: npm install surge -g
       - name: Deploying to surge
