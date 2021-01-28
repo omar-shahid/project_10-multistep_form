@@ -63,7 +63,7 @@ function App() {
       alignItems="center"
       minHeight="100vh"
       width="100vw"
-      minWidth={smBreak ? "100%" : "400px"}
+      minWidth={smBreak ? "100%" : "600px"}
     >
       <Card variant="elevation" elevation={5}>
         <Box minHeight="400px" maxWidth="600px" p={4}>
